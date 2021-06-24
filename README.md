@@ -14,3 +14,13 @@ jaliaga@ubuntumain:~/Project_Stairway/my-adonis-api$ pwd
 ~/Project_Stairway/my-adonis-api
 jaliaga@ubuntumain:~/Project_Stairway/my-adonis-api$ adonis serve --dev
 ```
+
+## Bootstrapping jenkins server
+
+```console
+docker pull jenkins/jenkins
+docker run -p 80:8080/tcp jenkins/jenkins:latest
+```
+
+On the browser, use: `localhost:80`
+
