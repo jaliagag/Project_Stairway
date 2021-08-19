@@ -20,6 +20,9 @@ jaliaga@ubuntumain:~/Project_Stairway/my-adonis-api$ adonis serve --dev
 ```console
 docker pull jenkins/jenkins
 docker run -p 80:8080/tcp jenkins/jenkins:latest
+###
+docker run -p 80:8080/tcp jenkins/jenkins:latest -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk11
+docker run -p 80:8080/tcp jenkins/jenkins:latest -v /Users/Documents/jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk11
 ```
 
 On the browser, use: `localhost:80`
