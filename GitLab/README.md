@@ -19,10 +19,10 @@ gitlab-rails console -e production
 Loading production environment (Rails 6.1.3.2)
 irb(main):001:0> user = User.where(id: 1).first
 => #<User id:1 @root>
-irb(main):002:0> user.password = 'Huercalense19!'
-=> "Huercalense19!"
-irb(main):003:0> user.password_confirmation = 'Huercalense19!'
-=> "Huercalense19!"
+irb(main):002:0> user.password = '<####>'
+=> "<####>"
+irb(main):003:0> user.password_confirmation = '<#####>'
+=> "<######>"
 irb(main):004:0> user.save!
 Enqueued ActionMailer::MailDeliveryJob (Job ID: e8174934-a121-4f6b-b6e3-ce5f0559fe75) to Sidekiq(mailers) with arguments: "DeviseMailer", "password_change", "deliver_now", {:args=>[#<GlobalID:0x00007ff47ef4b8c8 @uri=#<URI::GID gid://gitlab/User/1>>]}
 => true
